@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소나기 타자 게임</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="header">
+      <div class="stats">
+        <span>레벨: <span id="level">1</span></span>
+        <span>점수: <span id="score">0</span></span>
+        <span>라이프: <span id="life">3</span></span>
+      </div>
+    </div>
+    
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="1280" height="720"></canvas>
+      <div id="gameOverScreen" class="overlay hidden">
+        <h2>게임 오버!</h2>
+        <p>최종 점수: <span id="finalScore">0</span></p>
+        <button id="restartBtn">다시 시작하기</button>
+      </div>
+    </div>
+
+    <form id="inputForm" class="input-area">
+      <input type="text" id="wordInput" autocomplete="off" placeholder="단어를 입력하세요..." autofocus>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
